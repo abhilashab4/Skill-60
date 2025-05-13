@@ -4,8 +4,8 @@ class Task(BaseModel):
     description: str
     status: str
     
-class TaskWithID(BaseModel):
-    id: str
+class TaskWithID(Task):
+    id: int
 
 class UpdateTask(BaseModel):
     title: str | None = None
